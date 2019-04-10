@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
-    <script src="fiChouMi.js">
-</script>
+
+
 </head>
 <body>
 
-<header> </header>
+<header>
+
+    <button onClick="clicResult('pierre')"><img  id="img" src="img/pierre2.png"  alt="une pierre"></button>
+    <button onClick="clicResult('ciseaux')"><img  id="imgCiseaux" src="img/ciseaux.png"  alt="un ciseaux"></button>
+    <button onClick="clicResult('feuille')"><img  id="imgFeuille" src="img/feuille.png"  alt="une feuille"></button>
+
+
+</header>
     <main>
 
         <div class="container-2">
@@ -18,11 +25,18 @@
                 <label for="dynamic-label-input">PIERRE | FEUILLE | CISEAUX</label>
             </div>
 
-            <div class="btn btn-two">
+            <div  onclick="clicResult()" class="btn btn-two" type="submit" value="alert">
                 <span>OK</span>
             </div>
         </div>
+        <div>
+            <div class="choixordi" id="result"></div>
 
+
+
+        </div>
     </main>
+
+    <script src="fiChouMi.js"></script>
 </body>
 </html>

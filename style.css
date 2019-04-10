@@ -14,7 +14,18 @@ html,body {
 
 header {
     display: flex;
-    height: 130px;
+    height: 150px;
+}
+
+img {
+
+    display: flex;
+    height: 150px;
+    width: 150px;
+}
+
+p {
+    text-align: center;
 }
 /***********************INPUT*********************/
 
