@@ -11,14 +11,14 @@ function clicResult(x) {
     var ordi;
 
     if (random === 1) {
-        ordi = 'pierre'
-        document.createElement("img").innerHTML = choixordi;
+        ordi = 'pierre';
+        document.getElementById('pierre').innerHTML= pierre;
     } else if (random === 2) {
-        ordi = 'ciseaux'
-
+        ordi = 'ciseaux';
+        document.getElementById('ciseaux').innerHTML= ciseaux;
     } else {
-        ordi = 'feuille'
-
+        ordi = 'feuille';
+        document.getElementById('feuille').innerHTML= viewImage;
     }
 
     //if (joueur === 'pierre' | joueur === 'feuille' | joueur === 'ciseaux'){
@@ -27,7 +27,7 @@ function clicResult(x) {
             } else if (((joueur === "pierre") && (ordi === "ciseaux")) || ((joueur === "feuille") && (ordi === "pierre")) || ((joueur === "ciseaux") && (ordi === "feuille"))) {
                 result = (ordi + " " + "victoire");
             } else {
-                result = (ordi + " " + "lose")
+                result = (ordi + " " + "You lose")
             }
     //}
     //else {
@@ -39,7 +39,20 @@ function clicResult(x) {
     }
 
 
+    
 
+    /////////////////////////
+
+    var afficher=false; //permet de savoir si l'image est affichée ou non
+			
+			function viewImage(id) { 
+				var contenuImage=!afficher ? "<img src='img/feuille.png'>" : ""; //en fonction de afficher on met l'image ou non
+				afficher=!afficher;
+				var contenuBouton=afficher ? "Cacher l'image" : "Afficher l'image" ; //On met un texte correspondant
+				
+				document.getElementById(id).innerHTML=contenuImage;
+				document.getElementById().innerHTML=contenuBouton; 
+			} 
 
 
 
