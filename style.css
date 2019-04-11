@@ -15,11 +15,16 @@ html,body {
 header {
     display: flex;
     height: 150px;
+    justify-content: space-around;
 }
+.choixordi {
+    text-align: center;
+    font-size: 50px;
 
+
+}
 img {
 
-    display: flex;
     height: 150px;
     width: 150px;
 }
