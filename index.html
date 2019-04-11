@@ -4,37 +4,39 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
-
-
 </head>
 <body>
-
-<header>
-
-    <button onClick="clicResult('pierre')"><img   src="img/pierre2.png"  alt="une pierre"></button>
-    <button onClick="clicResult('ciseaux')"><img  src="img/ciseaux.png"  alt="un ciseaux"></button>
-    <button onClick="clicResult('feuille')"><img  src="img/feuille.png"  alt="une feuille"></button>
-
-
-</header>
+    <header>
+        <div>
+        <img onclick="clicResult('pierre')" src="img/pierre2.png">
+        <img onclick="clicResult('ciseaux')" src="img/ciseaux.png">
+        <img onclick="clicResult('feuille')" src="img/feuille.png">
+        </div>
+    </header>
     <main>
-
         <div class="container-2">
-            <div >
+            <!--<div >
                 <input class="choixjoueur" type="text" id="dynamic-label-input" placeholder="Fi shu me">
                 <label for="dynamic-label-input">PIERRE | FEUILLE | CISEAUX</label>
             </div>
-
             <div  onclick="clicResult()" class="btn btn-two" type="submit" value="alert">
                 <span>OK</span>
+
+            </div>-->
+            <div>
+                <img onclick="clicResult('pierre')" src="img/pierre2.png">
+                <img onclick="clicResult('ciseaux')" src="img/ciseaux.png">
+                <img onclick="clicResult('feuille')" src="img/feuille.png">
             </div>
+            
+            <div id="result"></div>
+
+            <div id="imgOrdi"></div>
+
         </div>
 
 
-        <div id="imgOrdi"></div>
-
     </main>
-
     <script src="fiChouMi.js"></script>
 </body>
 </html>
