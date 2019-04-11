@@ -1,3 +1,5 @@
+var scor = 0;
+
 function clicResult(x) {
 
 
@@ -34,15 +36,14 @@ function clicResult(x) {
             result = ("Equal"); // result = "chaine de carcateur" + varOrdi pierre feuille ou ciseau + chaine de caractere
     } else if (((joueur === "pierre") && (ordi === "ciseaux")) || ((joueur === "feuille") && (ordi === "pierre")) || ((joueur === "ciseaux") && (ordi === "feuille"))) { // different resultat possible de victoire
         result = ("You Win"); //result = varOrdi pierre feuille ou ciseau + "chaine de caractere
+        scor += 1;
     } else {
         result = ("You Lose") // idem + you lose
+        scor -= 1;
     }
     document.getElementById("result").innerHTML= result; // inject le resulat dans le html par la div id=result.
+    document.getElementById("scor").innerHTML= scor;
 }
-
-
-
-				
 
 
 

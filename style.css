@@ -29,6 +29,22 @@ p {
     text-align: center;
     font-size: 50px;
 }
+
+#imgPlayer {
+    display:tale;
+    padding:50px;
+    margin:50px;
+
+}
+#imgPlayer img {
+    border-radius:100%;
+}
+
+#scor {
+    color: white;
+
+}
+
 #imgOrdi{
     display:tale;
     padding:50px;
